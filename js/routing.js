@@ -50,6 +50,7 @@ main();
 const onNavClick = (pathname) => {
     const myArray = pathname.split("/");
     console.log("/" + myArray[1]);
+    console.log(window.location.origin);
     window.history.pushState(
         { data: myArray[3] },
         myArray[1],
